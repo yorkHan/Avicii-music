@@ -5,9 +5,9 @@
             this.$el=$(this.el)
         },
         template:`
-        <li>推荐音乐</li>
-        <li>排行榜</li>
-        <li>搜索</li>
+        <li id="tab-1" class="active">推荐音乐</li>
+        <li id="tab-2">排行榜</li>
+        <li id="tab-3">搜索</li>
         `,
         render(){
             this.$el.append(this.template)
