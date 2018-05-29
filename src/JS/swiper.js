@@ -5,7 +5,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     speed: 400,
     spaceBetween: 100,
     autoplay: {
-        delay: 2000,
+        delay: 3000,
       },
     // If we need pagination
     pagination: {
