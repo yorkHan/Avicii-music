@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* topNavBar*/
+header{
+    background-color: #000000;
+}
+.topNavBar{
+    width:90%;
+    margin: 0 auto;
+    height: 18vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topNavBar>.logo{
+    width: 15vw;
+}
+.topNavBar>.avicii{
+    color: #ffffff;
+    font-size: 6vw;
+    line-height: 15vw;
+    padding: 0 0 2vw 2vw;
+}
+
+/* tabs*/
+.tabs-container{
+
+}
+.tabs{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.tabs>li{
+    list-style: none;
+    text-align: center;
+}
+.tabs>li.active{
+    border-bottom: 1vw solid black;
+}
+.tabs>li>span{
+}
