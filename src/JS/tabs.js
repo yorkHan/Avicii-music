@@ -5,7 +5,7 @@
             this.$el=$(this.el)
         },
         template:`
-        <li id="tab-1" class="active">推荐音乐</li>
+        <li id="tab-1" class="active">首页</li>
         <li id="tab-2">排行榜</li>
         <li id="tab-3">搜索</li>
         `,

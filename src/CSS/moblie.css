@@ -43,7 +43,6 @@ header{
     text-align: center;
     font-family: Helvetica, sans-serif;
     padding: 2vw 0;
-    margin-right: 10vw;
     border-bottom: 2px solid transparent;
 }
 .tabs>li.active{
