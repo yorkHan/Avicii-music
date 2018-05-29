@@ -54,8 +54,8 @@ header{
 
 /*swiper*/
 .swiper-container {
-    width: 90%;
-    height: 55vh;
+    width: 90vw;
+    height: 90vw;
     margin: 3vh auto;
 }
 .swiper-slide>a>img{
