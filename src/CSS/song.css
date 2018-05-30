@@ -13,7 +13,7 @@ body{
     position: absolute;
     background-size: cover;
     background-position: center;
-    filter: blur(15px) brightness(40%);
+    filter: blur(15px) brightness(40%) drop-shadow(0 0 5px black);
 }
 /*header*/
 header{
@@ -21,7 +21,7 @@ header{
 }
 header>.navBar{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin: 1vh 0;
 }
 header>.navBar>span{
@@ -34,15 +34,13 @@ header>.navBar>.logo>img{
     margin: 0 2vw;
 }
 /*cover*/
-section{
-    position: absolute;
+section.play{
     width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-section>.pointer{
+section.play>.pointer{
     width: 24vw;
     height: 35vw;
     background-position: center;
@@ -50,7 +48,7 @@ section>.pointer{
     z-index: 3;
     margin-left: 15vw;
 }
-section>.cover-container{
+section.play>.cover-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +57,7 @@ section>.cover-container{
     height: 80vw;
     margin: -10vh auto 0 auto;
 }
-section>.cover-container>.dist{
+section.play>.cover-container>.dist{
     width: 100%;
     height: 100%;
     background-position: center;
@@ -67,7 +65,7 @@ section>.cover-container>.dist{
     position: absolute;
     z-index: 1;
 }
-section>.cover-container>.dist-light{
+section.play>.cover-container>.dist-light{
     width: 100%;
     height: 100%;
     background-position: center;
@@ -75,7 +73,7 @@ section>.cover-container>.dist-light{
     position: absolute;
     z-index: 2;
 }
-section>.cover-container>.cover{
+section.play>.cover-container>.cover{
     width: 65%;
     height: 65%;
     background-position: center;
@@ -84,7 +82,7 @@ section>.cover-container>.cover{
     z-index: 0;
     animation: 5s play infinite linear;
 }
-section>.cover-container>.cover.active{
+section.play>.cover-container>.cover.active{
     animation: 5s play infinite linear;
     animation-play-state:paused;
     -webkit-animation-play-state:paused; /* Safari 和 Chrome */
@@ -98,15 +96,28 @@ section>.cover-container>.cover.active{
     }
 }
 .icon {
-    width: 3.5em; height: 3.5em;
+    width: 15vw; height: 15vw;
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
     z-index: 3;
-    display: none;
  }
  .icon.active {
-     display: block;
+    display: none;
  }
-
-
+/*title*/
+section.title{
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    color: #ddd;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 0;
+}
+section.title>h1{
+    font-size: 30px;
+}
+section.title>h2{
+    font-size: 20px;
+}
