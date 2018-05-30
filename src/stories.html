@@ -79,10 +79,13 @@
     <script src="//at.alicdn.com/t/font_686192_xoizs2lm0u23xr.js"></script>
     <script>
         $('#info').click(()=>{
-            $('#text').toggleClass('active')
-            $('.icon.down').toggleClass('active')
-            $('.icon.up').toggleClass('active')
+            toggle('#text')
+            toggle('.icon.down')
+            toggle('.icon.up')
         })
+        function toggle(selector) {
+            $(selector).toggleClass('active')
+        }
     </script>
 </body>
 </html>

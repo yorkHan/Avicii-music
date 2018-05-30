@@ -26,6 +26,7 @@ header>.navBar{
 }
 header>.navBar>span{
     color: #fff;
+    letter-spacing: 0.05em;
     font-size: 5vw;
     font-family: DejaVu Math TeX Gyre;
 }
