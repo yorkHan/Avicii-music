@@ -1,6 +1,6 @@
 {
     let view={
-        el:"body",
+        el:"#app",
         init(){
              this.$el=$(this.el)
         },
@@ -46,7 +46,7 @@
                 .replace('{{song.cover}}',song.cover)
             )
         }
-        this.$el.prepend(temp)
+        this.$el.append(temp)
     }
     }
     let model={

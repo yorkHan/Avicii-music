@@ -21,7 +21,7 @@
             </div>
         </div>
     </header>
-    <section class="info">
+    <section  id="info" class="info">
         <div class="content">
             <p id="text">
                     简介：⽤奇迹旅程改写电⾳乐史 瑞典电⾳奇才再进化！<br>
@@ -44,6 +44,14 @@
                     酷玩乐团/Coldplay主唱Chris Martin友情合作，激撞出电⾳全新⽕花。<br>
                     【Stories】代表了EDM乐界的全新巅峰巨作，Avicii⽤多种⾳乐元素的融合美感，再次奠定了他经典传奇的地位。<br>
             </p>
+        </div>
+        <div class="btn">
+            <svg class="icon up" id="icon-up" aria-hidden="true">
+                <use xlink:href="#icon-jiantou-copy1"></use>
+            </svg>
+            <svg class="icon down" id="icon-down" aria-hidden="true">
+                <use xlink:href="#icon-arrow-down"></use>
+            </svg>
         </div>
     </section>
     <section class="music">
@@ -68,10 +76,12 @@
         </div>
     </section>
     <script src="./vendors/jquery.min.js"></script>
-    <script src="//at.alicdn.com/t/font_686192_6jlv75jn9ffajor.js"></script>
+    <script src="//at.alicdn.com/t/font_686192_xoizs2lm0u23xr.js"></script>
     <script>
-        $('#text').click(()=>{
+        $('#info').click(()=>{
             $('#text').toggleClass('active')
+            $('.icon.down').toggleClass('active')
+            $('.icon.up').toggleClass('active')
         })
     </script>
 </body>

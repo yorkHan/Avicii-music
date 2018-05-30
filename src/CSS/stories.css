@@ -74,7 +74,9 @@ header>.cover>.text>span.time{
 /*content*/
 section.info{
     width: 95%;
-    margin: 2vh auto 2vh auto;
+    margin: 2vh auto 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 section.info>.content>p{
     font-size: 14px;
@@ -87,6 +89,22 @@ section.info>.content>p{
 section.info>.content>p.active{
     overflow: visible;
     display: block;
+}
+.btn{
+    align-self: flex-end;
+}
+.icon.down{
+    display: block;
+    margin: 0;
+}
+.icon.down.active{
+   display: none;
+}
+.icon.up{
+    display: none;
+}
+.icon.up.active{
+   display: block;
 }
 /*music*/
 section.music h3{
