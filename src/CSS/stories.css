@@ -14,12 +14,14 @@ header{
     position: relative;
     display: flex;
     align-items: center;
+    border: 1px solid transparent;
+    overflow: hidden;
 }
 header>.bg{
     background-image: url(http://p9hnwekpi.bkt.clouddn.com/image/coverstories.jpg);
     background-position: center;
     background-size: cover;
-    filter: blur(10px);
+    filter: blur(10px) brightness(40%) drop-shadow(0 0 5px black);
     width: 100%;
     height: 28vh;
     position: absolute;
@@ -37,7 +39,7 @@ header>.cover>.image{
     background-size: cover;
     background-position: center;
     width: 35vw;
-    height: 20vh;
+    height: 35vw;
     position: relative;
 }
 header>.cover>.image>.title{
@@ -72,7 +74,7 @@ header>.cover>.text>span.time{
 /*content*/
 section.info{
     width: 95%;
-    margin: 5vh auto 2vh auto;
+    margin: 2vh auto 2vh auto;
 }
 section.info>.content>p{
     font-size: 14px;

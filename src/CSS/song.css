@@ -13,7 +13,7 @@ body{
     position: absolute;
     background-size: cover;
     background-position: center;
-    filter: blur(15px);
+    filter: blur(15px) brightness(40%);
 }
 /*header*/
 header{
@@ -22,11 +22,12 @@ header{
 header>.navBar{
     display: flex;
     align-items: flex-end;
+    margin: 1vh 0;
 }
 header>.navBar>span{
     color: #fff;
     font-size: 5vw;
-    font-family: Lame;
+    font-family: DejaVu Math TeX Gyre;
 }
 header>.navBar>.logo>img{
     width: 8vw;
