@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+/*bg*/
+.bg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+}
+/*header*/
+header{
+    position: absolute;
+}
+header>.navBar{
+    display: flex;
+    align-items: flex-end;
+}
+header>.navBar>span{
+    color: #fff;
+    font-size: 5vw;
+}
+header>.navBar>.logo>img{
+    width: 8vw;
+    margin: 0 2vw;
+}
+/*cover*/
+section{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section>.pointer{
+    width: 24vw;
+    height: 35vw;
+    background-position: center;
+    background-size: cover;
+    z-index: 3;
+    margin-left: 15vw;
+}
+section>.cover-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    margin: -10vh auto 0 auto;
+}
+section>.cover-container>.dist{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+section>.cover-container>.dist-light{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+}
+section>.cover-container>.cover{
+    width: 65%;
+    height: 65%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    animation: 5s play infinite linear;
+}
+section>.cover-container>.cover.active{
+    animation: 5s play infinite linear;
+    animation-play-state:paused;
+    -webkit-animation-play-state:paused; /* Safari 和 Chrome */
+}
+@keyframes play{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.icon {
+    width: 3.5em; height: 3.5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    z-index: 3;
+    display: none;
+ }
+ .icon.active {
+     display: block;
+ }
+
+
