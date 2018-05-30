@@ -14,7 +14,7 @@ header{
     position: relative;
     display: flex;
     align-items: center;
-    border: 1px solid transparent;
+    outline: 1px solid transparent;
     overflow: hidden;
 }
 header>.bg{
