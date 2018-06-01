@@ -16,6 +16,10 @@
     "url": "https://github.com/yorkHan/Avicii-music/issues"
   },
   "homepage": "https://github.com/yorkHan/Avicii-music#readme",
-  "dependencies": {},
+  "dependencies": {
+    "plupload": "^2.3.6",
+    "qiniu": "^7.1.7",
+    "qiniu-js": "^2.2.2"
+  },
   "devDependencies": {}
 }
