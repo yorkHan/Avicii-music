@@ -36,7 +36,7 @@
                 init: {
                     'FilesAdded': function(up, files) {
                         plupload.each(files, function(file) {
-                            // 文件添加进队列后,处理相关的事情
+                            // 文件添加进队列后，处理相关的事情
                         });
                     },
                     'BeforeUpload': function(up, file) {

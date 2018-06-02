@@ -39,6 +39,7 @@ var server = http.createServer(function(request, response){
     var mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
     var options = {
     scope: 'avicii-music',
+    mimeLimit:'audio/*',
     };
     var putPolicy = new qiniu.rs.PutPolicy(options);
     var uploadToken=putPolicy.uploadToken(mac);
