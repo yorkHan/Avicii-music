@@ -42,31 +42,22 @@
                     'FilesAdded': function(up, files) {
                         plupload.each(files, function(file) {
                             // 文件添加进队列后，处理相关的事情
-                            console.log(1)
                         });
                     },
                     'BeforeUpload': function(up, file) {
                            // 每个文件上传前,处理相关的事情
-                           console.log(2)
                     },
                     'UploadProgress': function (up, file) {
                         // 每个文件上传时,处理相关的事情
-                        console.log(3)
                     },
-                    'FileUploaded': function(up, file, info) {
-                        console.log(5)
+                    'FileUploaded': function (up, file, info) {
                         alert('上传成功')
-                           // 每个文件上传成功后,处理相关的事情
-                           // 其中 info.response 是文件上传成功后，服务端返回的json，形式如
-                           // {
-                           //    "hash": "Fh8xVqod2MQ1mocfI4S4KpRL6D98",
-                           //    "key": "gogopher.jpg"
-                           //  }
-                           // 参考http://developer.qiniu.com/docs/v6/api/overview/up/response/simple-response.html
-            
-                           let domain = up.getOption('domain');
-                           let response = JSON.parse(info.response);
-                           let sourceLink = 'http://'+domain+'/'+encodeURIComponent(response.key); 
+                        let domain = up.getOption('domain');
+                        let response = JSON.parse(info.response);
+                        let sourceLink = 'http://' + domain + '/' + encodeURIComponent(response.key);
+                        window.eventHub.emit('updata',{
+                            data:response.key
+                        })
                     },
                     'Error': function(up, err, errTip) {
                         if(err.message===""){
