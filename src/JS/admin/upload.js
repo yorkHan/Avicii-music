@@ -55,7 +55,8 @@
                         let domain = up.getOption('domain');
                         let response = JSON.parse(info.response);
                         let sourceLink = 'http://' + domain + '/' + encodeURIComponent(response.key);
-                        window.eventHub.emit('updata',{
+                        window.eventHub.emit('new',{
+                            url:sourceLink,
                             data:response.key
                         })
                     },

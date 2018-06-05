@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="./CSS/admin.css">
 </head>
 <body>
-    <div id="upload-wrapper">
-        <div id="container" class="upload-container">
-                <div id="pickfiles" class="pickfiles">点击上传或拖曳文件到该区域</div>
-        </div>
-    </div>
+    <section>
+            <div id="upload-wrapper">
+                <div id="container" class="upload-container">
+                        <div id="pickfiles" class="pickfiles">点击上传或拖曳文件到该区域</div>
+                </div>
+            </div>
+    </section>
     <aside>
         <div>
             <ul>
@@ -20,6 +22,14 @@
             </ul>
         </div>
     </aside>
+    <section>
+        <form>
+            歌曲<input type="text" name="song">
+            歌手<input type="text" name="singer">
+            外链<input type="text" name="url">
+            <input type="button" value="提交">
+        </form>
+    </section>
     <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
     <script src="./vendors/jquery.min.js"></script>
     <script src="./vendors/av-min.js"></script>

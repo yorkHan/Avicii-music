@@ -25,11 +25,10 @@
       
       var Music = AV.Object.extend('music');
       var music = new Music();
-      window.eventHub.on('updata',(data)=>{
-        console.log(1)
-        console.log(data)
+      window.eventHub.on('new',(song)=>{
         music.save({
-          words: data
+          words: song.data,
+          url:song.url
         }).then(function(object) {
           alert('LeanCloud Rocks!');
         })
