@@ -9,7 +9,6 @@
     init(view,model){
       this.view=view
       this.model=model
-      this.updata()
     },
     bindEvents(){
 
@@ -22,17 +21,14 @@
         appId: APP_ID,
         appKey: APP_KEY
       });
-      
       var Music = AV.Object.extend('music');
       var music = new Music();
-      window.eventHub.on('new',(song)=>{
         music.save({
           words: song.data,
           url:song.url
         }).then(function(object) {
           alert('LeanCloud Rocks!');
         })
-      })
     }
   }
   controller.init(view,model)
