@@ -1,5 +1,16 @@
 {
-    let view={}
+    let view={
+        el:'',
+        template:`
+        <form>
+        歌曲<input type="text" name="song">
+        歌手<input type="text" name="singer">
+        外链<input type="text" name="url">
+        <input type="button" value="提交">
+        </form>`,
+        render(){
+        }
+    }
     let model={
         data:{}
     }
@@ -12,7 +23,7 @@
         renderData(){
             window.eventHub.on('new',(song)=>{
                 Object.assign(this.model.data,song)
-                console.log(this.model.data)
+                this.view.render(this.model.data)
             })
         }
     }
