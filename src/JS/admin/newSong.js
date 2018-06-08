@@ -3,12 +3,13 @@
         el:'',
         template:`
         <form>
-        歌曲<input type="text" name="song">
-        歌手<input type="text" name="singer">
-        外链<input type="text" name="url">
+        歌曲<input type="text" name="song" value={{song}}>
+        歌手<input type="text" name="singer" value={{singer}}>
+        外链<input type="text" name="url" value={{url}}>
         <input type="button" value="提交">
         </form>`,
         render(){
+            this.view.template.replace()
         }
     }
     let model={
