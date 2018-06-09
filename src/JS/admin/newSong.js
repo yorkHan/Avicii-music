@@ -1,6 +1,6 @@
 {
     let view={
-        el:'',
+        el:'#song-info',
         template:`
         <form>
         歌曲<input type="text" name="song" value={{song}}>
